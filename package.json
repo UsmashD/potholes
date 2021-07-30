@@ -1,5 +1,5 @@
 {
-    "name": "potholescout",
+    "name": "potholes",
     "version": "1.0.0",
     "description": "Show potholes on map",
     "main": "server.js",
