@@ -15,18 +15,18 @@ const potholeRouter = require('./routes/potholeRoutes');
 
 const app = express();
 
-if (process.env.NODE_ENV === 'development') {
 app.use(cors({
     "origin": "*",
     "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
     "preflightContinue": false,
     "optionsSuccessStatus": 204
-  }));
+}));
 // {
-//     origin:["http://localhost:8080"],
-//     credentials:true
-// }));
-
+    //     origin:["http://localhost:8080"],
+    //     credentials:true
+    // }));
+    
+if (process.env.NODE_ENV === 'development') {
 //Developement logging
     app.use(morgan('dev'));
 }
