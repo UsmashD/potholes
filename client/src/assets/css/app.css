@@ -1,0 +1,16 @@
+.login{
+    background-color:beige;
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+}
+
+.mapboxgl-map{
+    min-height: 500px;
+    
+}
+
+.img-list{
+    max-width: 150px;
+    height: auto;
+}
