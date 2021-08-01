@@ -5,4 +5,4 @@ Our roads has a lot of potholes that sometimes give us a lot of headace and car 
 In this API the user can query the potholes near their location with a specified radius.
 
 Both the API and the Client are under development!
-(So it's not fhinished yet :stuck_out_tongue: )
+(So it's not finished yet :stuck_out_tongue: )
