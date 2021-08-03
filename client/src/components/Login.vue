@@ -49,15 +49,13 @@ import axios from 'axios';
                         url: this.path + '/users/login',
                         data: auth
                     });
-                    console.log(res.data);
-                    console.log(res.data.data.user);
+
                     if (res.data.status === 'success') {
                         // showAlert('success', 'Logged in succesfully!');
                         console.log('success');
                         this.$cookies.set("jwt", "Bearer " + res.data.token);
-                                                
-                        //  const jwt =  this.$cookies.get("username");
-                        // console.log(jwt);
+                        this.$cookies.set("user", res.data.data.user);
+                        
                         window.setTimeout(() => {
                             location.assign('/');
                         }, 1500);
@@ -67,6 +65,8 @@ import axios from 'axios';
                     // showAlert('error', 'Login failed!');
                 }
             }
+           
+
         }
     }
 </script>
