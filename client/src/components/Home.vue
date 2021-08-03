@@ -12,8 +12,10 @@
 
 <script>
 import axios from 'axios';
+
 export default {
     name: 'HelloWorld',
+
     data(){
         return{
             potholes: [],
@@ -29,7 +31,7 @@ export default {
 
     methods:{
         getPotholes(){
-            console.log(this.path + '/potholes');
+
             axios
             .get(this.path + '/potholes')
             .then(response => {
