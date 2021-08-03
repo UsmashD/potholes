@@ -1,18 +1,18 @@
 <template>
   <v-app>
   
-  <v-app-bar app>
+    <v-app-bar app >
     <Header />
-  </v-app-bar>
+    </v-app-bar>
+      
+    <v-main>
 
-   <v-main>
+      <v-container fluid>
 
-    <v-container fluid>
-
-    <router-view></router-view>
-   
-    </v-container>
-  </v-main>
+        <router-view></router-view>
+      
+      </v-container>
+    </v-main>
 
   </v-app>
   
@@ -21,7 +21,6 @@
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/_header.vue'
-// import Index from './components/Index.vue'
 
 export default {
   name: 'App',
