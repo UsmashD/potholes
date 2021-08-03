@@ -5,7 +5,10 @@ const potholeRoutes = [
   { 
     path: '/potholes', 
     name: 'potholes',
-    component: Potholes
+    component: Potholes,
+    meta: {
+      requiresAuth: true
+    }
 },{ 
     path: '/potholes/:id', 
     name: 'pothole',
