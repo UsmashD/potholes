@@ -14,7 +14,9 @@
         mounted(){
             console.log('logged out');
             this.$cookies.remove("jwt");
+            this.$cookies.remove("user");
             this.isUserLoggedIn = false;
+
             window.setTimeout(() => {
                 location.assign('/');
             }, 1500);
