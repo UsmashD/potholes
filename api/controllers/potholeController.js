@@ -62,11 +62,13 @@ exports.getAll = catchAsyncError( async (req, res, next) => {
 
 exports.create = catchAsyncError( async(req, res, next)=>{
     
+    const coords = [req.body.location.lat, req.body.location.lng];
+
     const newPothole = await Pothole.create({
             photo: req.file.filename, 
             description: req.body.description,
             location: {
-                coordinates : req.body.location
+                coordinates : coords
             }
         });
 
