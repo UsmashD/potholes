@@ -6,8 +6,7 @@
 }
 
 .mapboxgl-map{
-    min-height: 500px;
-    
+    min-height: 50em;    
 }
 
 .img-list{
