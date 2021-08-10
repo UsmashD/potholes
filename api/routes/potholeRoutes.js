@@ -6,8 +6,8 @@ const router = express.Router();
 
 router
     .route('/nearMe')
-    .get(potholeController.getPotholesNearUser)
-    .post(potholeController.getPotholesNearUser);
+    .get(potholeController.getPotholesNearUser);
+    // .post(potholeController.getPotholesNearUser);
 
 router
     .route('/')
