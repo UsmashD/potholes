@@ -3,7 +3,6 @@ const User = require('./../models/userModel');
 exports.getOne = async (req, res, next) => {
     let user = await User.findById(req.params.id);
     
-    //  5c8a1dfa2f8fb814b56fa181
     res.status(200).json({
       status: 'success',      
       data: {
