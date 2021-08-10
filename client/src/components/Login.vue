@@ -1,5 +1,6 @@
 <template>
-    <div >
+
+    <div>
         <div class="row justify-content-center">
             <div class="col col-md-2">
                 <form @submit="loginUser()">
@@ -31,13 +32,12 @@
 <script>
 import axios from 'axios';
     export default {
-        data() {
-            return {
-                path: 'http://localhost:3000/api/v1',
-                email: null,
-                password: null,
-            }
-        },
+        data: ()=> ({
+            path: 'http://localhost:3000/api/v1',
+            email: null,
+            password: null,
+            
+        }),
 
         methods:{
         
@@ -65,6 +65,7 @@ import axios from 'axios';
                     // showAlert('error', 'Login failed!');
                 }
             }
+
            
 
         }
